@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Кухни, шкафы и корпусная мебель на заказ. Избранные проекты мастерской «Рассвет Мебель».">
+  <meta name="theme-color" content="#eae0d1">
+  <title>Рассвет Мебель — корпусная мебель на заказ</title>
+  <link rel="icon" type="image/webp" href="assets/logo.webp">
+  <style>:root {
+  --paper: #eae0d1;
+  --surface: #f4eadc;
+  --sand: #e1cfb7;
+  --ink: #30251f;
+  --muted: #5e4f42;
+  --walnut: #674b38;
+  --espresso: #3c2d24;
+  --gold: #936c48;
+  --line: #c9b8a4;
+  --control-line: #977e67;
+  --radius: 16px;
+  --control-radius: 10px;
+  --serif: Georgia, "Times New Roman", serif;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  color-scheme: light;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-padding-top: 20px; scroll-behavior: smooth; }
+body { margin: 0; }
+img { display: block; width: 100%; }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+button:disabled { cursor: default; }
+a { color: inherit; }
+button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid var(--walnut); outline-offset: 4px; }
+[hidden] { display: none !important; }
+h1, h2, h3, p, figure, dl, dd, fieldset { margin: 0; }
+.symbols, .sr-only, .skip:not(:focus) { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.skip:focus { position: fixed; z-index: 10; inset: 8px auto auto 8px; background: white; padding: 12px; }
+.shell { width: min(1232px, calc(100% - 96px)); margin-inline: auto; }
+.icon { width: 20px; height: 20px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.masthead { border-bottom: 1px solid var(--line); background: var(--paper); }
+.head-row, .footer-row { min-height: 82px; display: flex; justify-content: space-between; align-items: center; gap: 22px; }
+.brand { display: inline-flex; align-items: center; gap: 12px; color: var(--ink); font-size: 20px; letter-spacing: -.035em; line-height: 1.05; text-decoration: none; flex: none; }
+.brand img { width: 46px; height: 46px; object-fit: cover; border-radius: 50%; }
+.brand small { display: block; margin-top: 6px; font-size: 8px; font-weight: 680; color: var(--muted); letter-spacing: .15em; }
+.head-row nav, .footer-links { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+.head-row nav a { font-size: 14px; font-weight: 600; color: var(--muted); text-decoration: none; }
+.head-row nav a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 10px 16px; border: 1px solid transparent; border-radius: var(--control-radius); font-size: 14px; font-weight: 660; text-align: center; line-height: 1.28; text-decoration: none; }
+.primary { background: var(--walnut); border-color: var(--walnut); color: #fff8ef; }
+.primary:hover { background: var(--espresso); border-color: var(--espresso); }
+.outline, .head-cta { color: var(--espresso); border-color: var(--control-line); background: transparent; }
+.outline:hover, .head-cta:hover { background: var(--sand); }
+.head-cta { min-height: 44px; }
+.hero { display: grid; grid-template-columns: .86fr 1.14fr; align-items: center; gap: clamp(28px, 5vw, 74px); padding-block: 52px 58px; }
+.hero h1, h2 { font-family: var(--serif); font-weight: 400; letter-spacing: -.06em; line-height: 1.02; }
+.hero h1 { margin-top: 19px; font-size: clamp(55px, 6vw, 93px); }
+.hero h1 em { color: var(--walnut); font-weight: 400; }
+.hero-lead { color: var(--muted); max-width: 375px; margin-top: 23px; font-size: 17px; line-height: 1.6; }
+.hero-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 25px; }
+.kicker { display: flex; align-items: center; gap: 8px; color: var(--espresso); font-size: 11px; font-weight: 750; line-height: 1.4; letter-spacing: .15em; }
+.kicker > span { width: 7px; height: 7px; border-radius: 50%; flex: none; background: var(--gold); }
+.hero-visual { min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: calc(var(--radius) + 4px); background: var(--surface); }
+.hero-visual > img { height: auto; }
+.hero-visual figcaption { display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 65px; padding: 10px 14px; }
+.hero-visual figcaption strong, .hero-visual figcaption small { display: block; }
+.hero-visual figcaption strong { font-size: 15px; }
+.hero-visual figcaption small { margin-top: 3px; color: var(--muted); font-size: 12px; }
+.round { display: grid; place-items: center; flex: none; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--control-line); background: var(--surface); color: var(--espresso); padding: 0; }
+.round:hover { background: var(--sand); }
+.round:disabled { opacity: .4; }
+.catalog { padding-block: 35px 76px; border-top: 1px solid var(--line); }
+.section-head { display: flex; justify-content: space-between; align-items: end; flex-wrap: wrap; gap: 12px 28px; margin-bottom: 23px; }
+.section-head h2, .process h2 { font-size: clamp(41px, 5vw, 68px); margin-top: 8px; }
+.section-head > p { max-width: 365px; font-size: 15px; color: var(--muted); line-height: 1.55; }
+.plain-link { display: inline-flex; align-items: center; gap: 6px; width: fit-content; min-height: 44px; padding: 0; border: 0; background: transparent; color: var(--espresso); text-decoration: underline; text-underline-offset: 4px; font-size: 14px; font-weight: 630; text-align: left; }
+.plain-link .icon { width: 17px; height: 17px; }
+.catalog-tools { display: flex; align-items: center; justify-content: space-between; gap: 8px 14px; flex-wrap: wrap; margin-bottom: 18px; }
+.filters { display: flex; flex-wrap: wrap; gap: 7px; }
+.filters button { min-height: 44px; padding: 6px 12px; border: 1px solid var(--control-line); border-radius: 22px; background: transparent; color: var(--espresso); font-size: 13px; font-weight: 640; }
+.filters button:hover { background: var(--sand); }
+.filters button[aria-pressed="true"] { border-color: var(--walnut); background: var(--walnut); color: #fff8ef; }
+.count { color: var(--muted); font-size: 13px; }
+.cards { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 20px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+.card-open { display: block; width: 100%; border: 0; border-radius: inherit; overflow: hidden; background: transparent; color: inherit; padding: 0; text-align: left; }
+.card-image { display: block; position: relative; overflow: hidden; background: var(--sand); }
+.card-image img { aspect-ratio: 1.26; height: auto; object-fit: cover; transition: transform .25s ease; }
+.card-open[data-project="kids-room"] img { object-position: center 68%; }
+.card-open[data-project="tv-zone"] img { object-position: center 84%; }
+.card-open:hover .card-image img { transform: scale(1.025); }
+.card-index { position: absolute; inset: 10px auto auto 10px; background: var(--surface); border-radius: 6px; padding: 5px 7px; color: var(--espresso); font-size: 11px; font-weight: 700; }
+.card-body { display: flex; align-items: center; justify-content: space-between; gap: 11px; min-height: 86px; padding: 13px 15px; }
+.card-body small { color: var(--muted); display: block; font-size: 11px; margin-bottom: 4px; }
+.card-body strong { display: block; font: 400 clamp(20px, 2.15vw, 30px)/1.09 var(--serif); letter-spacing: -.032em; }
+.card-body .round { width: 34px; height: 34px; }
+.card-body .icon { width: 17px; height: 17px; }
+.process { color: #fbefe1; background: var(--espresso); }
+.process-inner { display: grid; grid-template-columns: .76fr 1.24fr; gap: 44px; padding-block: 53px; }
+.process .kicker { color: #edddcb; }
+.process .kicker > span { background: #cba57d; }
+.process ol { list-style: none; margin: 0; padding: 0; }
+.process li { display: grid; grid-template-columns: 34px 1fr; gap: 12px; padding: 15px 0; border-bottom: 1px solid #7c6554; }
+.process li:first-child { padding-top: 0; }
+.process li:last-child { border-bottom: 0; padding-bottom: 0; }
+.process li > span { font: 21px var(--serif); color: #e0bb91; }
+.process h3 { margin-bottom: 5px; font-size: 17px; font-weight: 650; }
+.process li p { color: #eddccd; font-size: 14px; line-height: 1.48; }
+.order { padding-block: 63px 72px; }
+.order-grid { display: grid; grid-template-columns: minmax(0,1.38fr) minmax(0,.8fr); align-items: start; gap: 20px; }
+.order-form, .order-summary { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: clamp(16px, 2.5vw, 33px); }
+.order-form { display: grid; gap: 16px; }
+.order-form > .button { justify-self: start; }
+.order-summary { background: var(--sand); }
+.order-summary h3 { margin: 8px 0 17px; font: 400 clamp(30px, 3.1vw, 46px)/1.03 var(--serif); letter-spacing: -.04em; }
+.summary-fields { display: grid; gap: 9px; }
+.summary-fields > div { display: grid; grid-template-columns: minmax(0,.6fr) minmax(0,1fr); gap: 8px; border-bottom: 1px solid var(--control-line); padding-bottom: 8px; font-size: 14px; line-height: 1.45; }
+.summary-fields dt { color: var(--muted); }
+.summary-fields dd { font-weight: 630; overflow-wrap: anywhere; white-space: pre-wrap; }
+.summary-note { margin-top: 12px; color: var(--muted); font-size: 13px; line-height: 1.5; }
+.fields { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 13px; }
+.order-form label, .crm-list label, legend { color: var(--ink); font-size: 14px; font-weight: 650; }
+.order-form input:not([type="radio"]), select, textarea { width: 100%; display: block; background: #f9f1e7; color: var(--ink); border: 1px solid var(--control-line); border-radius: var(--control-radius); min-height: 46px; margin-top: 6px; padding: 9px 10px; font-size: 15px; font-weight: 400; }
+textarea { resize: vertical; }
+.finish { padding: 0; border: 0; min-width: 0; }
+.finish legend { padding: 0; margin-bottom: 7px; }
+.swatches { display: flex; flex-wrap: wrap; gap: 7px; }
+.swatches label { position: relative; cursor: pointer; }
+.swatches input { position: absolute; opacity: 0; }
+.swatches label > span { display: flex; align-items: center; min-height: 44px; gap: 6px; padding: 5px 8px; border: 1px solid var(--control-line); border-radius: var(--control-radius); font-size: 12px; }
+.swatches input:checked + span { border-color: var(--walnut); background: var(--sand); box-shadow: inset 0 0 0 1px var(--walnut); }
+.swatches input:focus-visible + span { outline: 3px solid var(--walnut); outline-offset: 3px; }
+.sample { display: inline-block; width: 15px; height: 15px; border: 1px solid #b9b9ad; border-radius: 50%; background: #ddd8c8; }
+.sample.unset { background: transparent; }
+.sample.light { background: #ebe6da; }
+.sample.wood { background: #a7825c; }
+.sample.green { background: #526c58; }
+.sample.dark { background: #343931; }
+.reference { display: grid; grid-template-columns: 70px minmax(0,1fr) auto; align-items: center; gap: 10px; padding: 7px; border: 1px solid var(--line); border-radius: var(--control-radius); background: var(--sand); }
+.reference img { height: 58px; object-fit: cover; border-radius: 7px; }
+.reference strong, .reference small { display: block; }
+.reference small { color: var(--muted); margin-bottom: 3px; }
+.footer { border-top: 1px solid var(--line); }
+.footer-note { padding-bottom: 22px; color: var(--muted); font-size: 12px; }
+.dialog { width: min(670px, calc(100% - 26px)); max-height: calc(100dvh - 28px); padding: 0; border: 1px solid var(--line); border-radius: var(--radius); color: var(--ink); background: var(--surface); }
+.dialog::backdrop { background: #251811a8; }
+.dialog-head, .dialog-body { padding: 15px 20px; }
+.dialog-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.dialog-head h2 { margin-top: 4px; font-size: clamp(26px,4vw,43px); }
+.dialog-body > p { line-height: 1.55; }
+.photo-stage { position: relative; background: #291f1a; }
+.photo-stage img { height: clamp(250px, 54dvh, 540px); object-fit: contain; touch-action: pan-y pinch-zoom; }
+.photo-stage .round { position: absolute; top: 50%; transform: translateY(-50%); }
+.photo-stage .prev { left: 10px; }
+.photo-stage .next { right: 10px; }
+.photo-index { position: absolute; bottom: 9px; right: 10px; padding: 3px 7px; border-radius: 6px; background: var(--surface); color: var(--ink); font-size: 12px; }
+.dialog-actions { display: flex; flex-wrap: wrap; gap: 9px 14px; align-items: center; margin-top: 13px; }
+.dialog-note { color: var(--muted); font-size: 14px; margin-block: 6px 10px; }
+.feedback { min-height: 1.4em; margin-top: 7px; font-size: 13px; color: var(--espresso); }
+.crm-list { display: grid; gap: 10px; }
+.crm-item { border: 1px solid var(--line); border-radius: var(--control-radius); padding: 12px; background: var(--paper); }
+.crm-item summary { cursor: pointer; font-weight: 650; padding: 4px 0; }
+.crm-item pre { font: inherit; font-size: 14px; white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.42; }
+.crm-item label { display: block; margin-top: 9px; }
+@media (max-width: 970px) {
+  .shell { width: calc(100% - 56px); }
+  .hero { gap: 26px; }
+  .hero h1 { font-size: clamp(50px,7vw,71px); }
+  .cards { gap: 14px; }
+  .footer-links { gap: 10px 18px; }
+}
+@media (max-width: 730px) {
+  html { scroll-padding-top: calc(76px + env(safe-area-inset-top, 0px)); }
+  .shell { width: calc(100% - 34px); }
+  .masthead { position: sticky; top: 0; z-index: 4; padding-top: env(safe-area-inset-top, 0px); }
+  .head-row { min-height: 64px; gap: 9px; }
+  .head-row nav { display: none; }
+  .brand { font-size: 17px; gap: 7px; }
+  .brand img { width: 36px; height: 36px; }
+  .brand small { font-size: 7px; }
+  .head-cta { font-size: 12px; padding-inline: 8px; }
+  .hero { grid-template-columns: 1fr; gap: 18px; padding-block: 22px 28px; }
+  .hero h1 { margin-top: 11px; font-size: clamp(47px,10.2vw,69px); }
+  .hero-lead { margin-top: 12px; font-size: 15px; }
+  .hero-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 14px; gap: 8px; }
+  .hero-actions .button { gap: 5px; padding-inline: 7px; font-size: 13px; }
+  .hero-actions .icon { width: 17px; height: 17px; }
+  .hero-visual figcaption { min-height: 55px; padding: 7px 9px; }
+  .catalog, .order { padding-block: 31px 38px; }
+  .cards { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; }
+  .card-body { padding: 9px 10px; min-height: 76px; gap: 6px; }
+  .card-body .round { width: 28px; height: 28px; }
+  .process-inner, .order-grid { grid-template-columns: 1fr; gap: 17px; }
+  .order-form > .button { width: 100%; }
+  .process-inner { padding-block: 29px; }
+  .process h2 br { display: none; }
+  .footer-row { align-items: start; flex-direction: column; padding-block: 13px 6px; gap: 6px; }
+  .photo-stage img { height: clamp(205px, 45dvh, 420px); }
+  .order-form input:not([type="radio"]), select, textarea { font-size: 16px; }
+}
+@media (max-width: 435px) {
+  .card-body strong { font-size: 19px; overflow-wrap: anywhere; }
+  .card-body .round { width: 24px; height: 24px; }
+  .card-body .round .icon { width: 13px; height: 13px; }
+  .fields { grid-template-columns: 1fr; }
+  .dialog-head, .dialog-body { padding-inline: 13px; }
+  #request-dialog .dialog-actions > .button { width: 100%; }
+}
+@media (max-width: 350px) {
+  .shell { width: calc(100% - 28px); }
+  .head-row .brand { font-size: 15px; }
+  .hero h1 { font-size: 43px; }
+  .cards { grid-template-columns: 1fr; }
+  .card-image img { aspect-ratio: 1.45; }
+  .card-body strong { font-size: 24px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .card-image img { transition: none; }
+}
+</style>
+</head>
+<body id="top">
+  <svg class="symbols" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="down" viewBox="0 0 24 24"><path d="M12 4v15m-6-6 6 6 6-6"/></symbol>
+    <symbol id="up" viewBox="0 0 24 24"><path d="M12 20V5m-6 6 6-6 6 6"/></symbol>
+    <symbol id="external" viewBox="0 0 24 24"><path d="M6 18 18 6M8 6h10v10"/></symbol>
+    <symbol id="left" viewBox="0 0 24 24"><path d="M20 12H4m7-7-7 7 7 7"/></symbol>
+    <symbol id="right" viewBox="0 0 24 24"><path d="M4 12h16m-7-7 7 7-7 7"/></symbol>
+    <symbol id="close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="phone" viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2c0 8.8 7.2 16 16 16a2 2 0 0 0 2-2v-3l-5-2-1.5 2a12 12 0 0 1-6.5-6.5L10 8 8 3Z"/></symbol>
+  </svg>
+  <a class="skip" href="#main">Перейти к содержанию</a>
+  <header class="masthead">
+    <div class="shell head-row">
+      <a class="brand" href="#top" aria-label="Рассвет Мебель, к началу">
+        <img src="assets/logo.webp" width="46" height="46" alt="">
+        <span>Рассвет <strong>Мебель</strong><small>МЕБЕЛЬНАЯ МАСТЕРСКАЯ</small></span>
+      </a>
+      <nav aria-label="Основные разделы">
+        <a href="#projects">Работы</a>
+        <a href="#process">Как заказать</a>
+      </nav>
+      <a class="button head-cta" href="#order">Обсудить проект</a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="kicker"><span></span> КОРПУСНАЯ МЕБЕЛЬ НА ЗАКАЗ</p>
+        <h1 id="hero-title">Мебель по<br> меркам <em>дома</em></h1>
+        <p class="hero-lead">Кухни, шкафы и мебель для хранения. Посмотрите готовые работы и расскажите, что хотите сделать для своего пространства.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#order">Собрать заявку <svg class="icon" aria-hidden="true"><use href="#down"/></svg></a>
+          <a class="button outline" href="#projects">Смотреть работы <svg class="icon" aria-hidden="true"><use href="#down"/></svg></a>
+        </div>
+      </div>
+      <figure class="hero-visual">
+        <img src="assets/green-kitchen-1.webp" width="800" height="600" alt="Зелёная кухня с подсвеченной витриной и каменным фартуком" fetchpriority="high">
+        <figcaption>
+          <span><strong>Зелёная кухня</strong><small>Проект мастерской · 9 сентября</small></span>
+          <button class="round" type="button" data-project="green-kitchen" aria-label="Открыть фото зелёной кухни"><svg class="icon" aria-hidden="true"><use href="#plus"/></svg></button>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="catalog shell" id="projects" aria-labelledby="projects-title">
+      <div class="section-head">
+        <div><p class="kicker"><span></span> ПОРТФОЛИО</p><h2 id="projects-title">Избранные работы</h2></div>
+        <a class="plain-link" href="https://t.me/rassvet_mebel" target="_blank" rel="noopener noreferrer">Канал мастерской <svg class="icon" aria-hidden="true"><use href="#external"/></svg></a>
+      </div>
+      <div class="catalog-tools">
+        <div class="filters" aria-label="Фильтр по виду мебели">
+          <button type="button" data-filter="all" aria-pressed="true">Все</button>
+          <button type="button" data-filter="Кухни" aria-pressed="false">Кухни</button>
+<button type="button" data-filter="Шкафы" aria-pressed="false">Шкафы</button>
+<button type="button" data-filter="Детские" aria-pressed="false">Детские</button>
+<button type="button" data-filter="ТВ-зоны" aria-pressed="false">ТВ-зоны</button>
+        </div>
+        <p id="project-count" class="count" aria-live="polite"></p>
+      </div>
+      <div class="cards"><article class="card" data-category="Кухни">
+  <button class="card-open" type="button" data-project="green-kitchen" aria-label="Смотреть проект «Зелёная кухня»">
+    <span class="card-image"><img src="assets/green-kitchen-1.webp" width="800" height="600" alt="Зелёная кухня с подсвеченной витриной и каменным фартуком" loading="lazy" decoding="async"><span class="card-index" aria-hidden="true">01</span></span>
+    <span class="card-body"><span><small>Кухни</small><strong>Зелёная кухня</strong></span><span class="round" aria-hidden="true"><svg class="icon"><use href="#plus"/></svg></span></span>
+  </button>
+</article>
+<article class="card" data-category="Кухни">
+  <button class="card-open" type="button" data-project="glass-kitchen" aria-label="Смотреть проект «Кухня с витриной»">
+    <span class="card-image"><img src="assets/glass-kitchen-1.webp" width="800" height="600" alt="Светлая кухня с высокой застеклённой витриной, вид спереди" loading="lazy" decoding="async"><span class="card-index" aria-hidden="true">02</span></span>
+    <span class="card-body"><span><small>Кухни</small><strong>Кухня с витриной</strong></span><span class="round" aria-hidden="true"><svg class="icon"><use href="#plus"/></svg></span></span>
+  </button>
+</article>
+<article class="card" data-category="Шкафы">
+  <button class="card-open" type="button" data-project="hall-storage" aria-label="Смотреть проект «Шкафы для прихожей»">
+    <span class="card-image"><img src="assets/hall-storage-1.webp" width="600" height="800" alt="Шкафы с древесным рисунком и открытая секция прихожей" loading="lazy" decoding="async"><span class="card-index" aria-hidden="true">03</span></span>
+    <span class="card-body"><span><small>Шкафы</small><strong>Шкафы для прихожей</strong></span><span class="round" aria-hidden="true"><svg class="icon"><use href="#plus"/></svg></span></span>
+  </button>
+</article>
+<article class="card" data-category="Детские">
+  <button class="card-open" type="button" data-project="kids-room" aria-label="Смотреть проект «Рабочая зона в детской»">
+    <span class="card-image"><img src="assets/kids-room-1.webp" width="600" height="800" alt="Стол под окном между двумя высокими шкафами в детской" loading="lazy" decoding="async"><span class="card-index" aria-hidden="true">04</span></span>
+    <span class="card-body"><span><small>Детские</small><strong>Рабочая зона в детской</strong></span><span class="round" aria-hidden="true"><svg class="icon"><use href="#plus"/></svg></span></span>
+  </button>
+</article>
+<article class="card" data-category="Шкафы">
+  <button class="card-open" type="button" data-project="bedroom" aria-label="Смотреть проект «Хранение в спальне»">
+    <span class="card-image"><img src="assets/bedroom-1.webp" width="800" height="600" alt="Светлые шкафы вдоль стены в спальне" loading="lazy" decoding="async"><span class="card-index" aria-hidden="true">05</span></span>
+    <span class="card-body"><span><small>Шкафы</small><strong>Хранение в спальне</strong></span><span class="round" aria-hidden="true"><svg class="icon"><use href="#plus"/></svg></span></span>
+  </button>
+</article>
+<article class="card" data-category="ТВ-зоны">
+  <button class="card-open" type="button" data-project="tv-zone" aria-label="Смотреть проект «Подвесная ТВ-тумба»">
+    <span class="card-image"><img src="assets/tv-zone-1.webp" width="600" height="800" alt="Подвесная ТВ-тумба и высокая секция с открытыми полками" loading="lazy" decoding="async"><span class="card-index" aria-hidden="true">06</span></span>
+    <span class="card-body"><span><small>ТВ-зоны</small><strong>Подвесная ТВ-тумба</strong></span><span class="round" aria-hidden="true"><svg class="icon"><use href="#plus"/></svg></span></span>
+  </button>
+</article></div>
+    </section>
+
+    <section class="process" id="process" aria-labelledby="process-title">
+      <div class="shell process-inner">
+        <div><p class="kicker"><span></span> С ЧЕГО НАЧАТЬ</p><h2 id="process-title">От идеи<br> к проекту</h2></div>
+        <ol>
+          <li><span>01</span><div><h3>Выберите пример</h3><p>Отметьте понравившуюся работу или опишите свою идею.</p></div></li>
+          <li><span>02</span><div><h3>Добавьте детали</h3><p>Укажите примерные размеры, оттенок и всё, что важно учесть.</p></div></li>
+          <li><span>03</span><div><h3>Обсудите заказ</h3><p>Передайте заявку мастерской. План помещения или фото можно приложить в переписке.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="order shell" id="order" aria-labelledby="order-title">
+      <div class="section-head">
+        <div><p class="kicker"><span></span> ВАШ ПРОЕКТ</p><h2 id="order-title">Соберите заявку</h2></div>
+        <p>Для первого разговора достаточно примерных размеров и пожеланий. Стоимость и сроки уточнит мастерская.</p>
+      </div>
+      <div class="order-grid">
+        <form id="order-form" class="order-form">
+          <div class="reference" id="reference" hidden>
+            <img id="reference-image" width="70" height="58" alt="">
+            <div><small>Понравившаяся работа</small><strong id="reference-name"></strong></div>
+            <button id="clear-reference" type="button" class="round" aria-label="Убрать выбранную работу"><svg class="icon" aria-hidden="true"><use href="#close"/></svg></button>
+          </div>
+          <div class="fields">
+            <label>Что изготовить <span aria-hidden="true">*</span>
+              <select name="kind" required>
+                <option value="">Выберите вид мебели</option>
+                <option>Кухня</option><option>Шкаф или гардеробная</option><option>Тумба или ТВ-зона</option><option>Стол или другая мебель</option>
+              </select>
+            </label>
+            <label>Ваш город<input name="city" maxlength="65" autocomplete="address-level2" placeholder="Например, ваш город"></label>
+          </div>
+          <label>Примерные размеры<input name="size" maxlength="100" placeholder="Например, 320 × 245 см"></label>
+          <fieldset class="finish">
+            <legend>Какая отделка нравится</legend>
+            <div class="swatches">
+              <label><input type="radio" name="finish" value="" checked><span><i class="sample unset"></i>Обсудим</span></label>
+              <label><input type="radio" name="finish" value="Светлая"><span><i class="sample light"></i>Светлая</span></label>
+              <label><input type="radio" name="finish" value="Под дерево"><span><i class="sample wood"></i>Под дерево</span></label>
+              <label><input type="radio" name="finish" value="Зелёная"><span><i class="sample green"></i>Зелёная</span></label>
+              <label><input type="radio" name="finish" value="Тёмная"><span><i class="sample dark"></i>Тёмная</span></label>
+            </div>
+          </fieldset>
+          <label>Что ещё учесть<textarea name="notes" maxlength="550" rows="3" placeholder="Например, нужна колонна под технику и больше места для хранения"></textarea></label>
+          <button type="submit" class="button primary">Подготовить заявку</button>
+        </form>
+        <aside class="order-summary" aria-labelledby="summary-title">
+          <p class="kicker"><span></span> ПРЕДПРОСМОТР</p>
+          <h3 id="summary-title">Ваш запрос</h3>
+          <dl id="summary-fields" class="summary-fields"></dl>
+          <p class="summary-note">Посмотрите, как будет выглядеть заявка, прежде чем передать её мастерской.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="shell footer-row">
+      <a class="brand" href="#top" aria-label="Рассвет Мебель, к началу"><img src="assets/logo.webp" width="46" height="46" alt=""><span>Рассвет <strong>Мебель</strong></span></a>
+      <div class="footer-links">
+        <a class="plain-link" href="tel:+79650567445"><svg class="icon" aria-hidden="true"><use href="#phone"/></svg> +7 965 056-74-45</a>
+        <a class="plain-link" href="https://t.me/rassvet_mebel" target="_blank" rel="noopener noreferrer">Канал в Telegram <svg class="icon" aria-hidden="true"><use href="#external"/></svg></a>
+        <button type="button" id="open-crm" class="plain-link">Демо CRM</button>
+        <a class="plain-link" href="#top">Наверх <svg class="icon" aria-hidden="true"><use href="#up"/></svg></a>
+      </div>
+    </div>
+    <p class="shell footer-note">Демонстрационная версия сайта</p>
+  </footer>
+
+  <dialog id="project-dialog" class="dialog project-dialog" aria-labelledby="project-title">
+    <div class="dialog-head"><div><p class="kicker" id="project-kind"></p><h2 id="project-title"></h2></div><button class="round" type="button" data-close aria-label="Закрыть проект"><svg class="icon" aria-hidden="true"><use href="#close"/></svg></button></div>
+    <div class="photo-stage">
+      <img id="project-image" alt="" draggable="false">
+      <button class="round prev" id="photo-prev" type="button" aria-label="Предыдущая фотография"><svg class="icon" aria-hidden="true"><use href="#left"/></svg></button>
+      <button class="round next" id="photo-next" type="button" aria-label="Следующая фотография"><svg class="icon" aria-hidden="true"><use href="#right"/></svg></button>
+      <span id="photo-index" class="photo-index" aria-live="polite"></span>
+    </div>
+    <div class="dialog-body">
+      <p id="project-description"></p>
+      <div class="dialog-actions">
+        <button id="select-project" type="button" class="button primary">Хочу похожий проект</button>
+        <a id="project-source" class="plain-link" target="_blank" rel="noopener noreferrer">Публикация в Telegram <svg class="icon" aria-hidden="true"><use href="#external"/></svg></a>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog id="request-dialog" class="dialog" aria-labelledby="request-title">
+    <div class="dialog-head"><div><p class="kicker">ВАШ ПРОЕКТ</p><h2 id="request-title">Заявка готова</h2></div><button class="round" type="button" data-close aria-label="Закрыть заявку"><svg class="icon" aria-hidden="true"><use href="#close"/></svg></button></div>
+    <div class="dialog-body">
+      <label class="sr-only" for="request-text">Текст заявки</label>
+      <textarea id="request-text" rows="8" readonly></textarea>
+      <p class="dialog-note">Скопируйте текст для переписки или позвоните в мастерскую и обсудите детали.</p>
+      <div class="dialog-actions">
+        <a id="request-contact" class="button primary" href="tel:+79650567445"><svg class="icon" aria-hidden="true"><use href="#phone"/></svg> Позвонить в мастерскую</a>
+        <button id="copy-request" type="button" class="button outline">Скопировать текст</button>
+        <button id="save-test" type="button" class="plain-link">Попробовать в демо CRM</button>
+      </div>
+      <p id="request-feedback" class="feedback" role="status"></p>
+    </div>
+  </dialog>
+  <dialog id="crm-dialog" class="dialog crm-dialog" aria-labelledby="crm-title">
+    <div class="dialog-head"><div><p class="kicker">ДЕМО CRM</p><h2 id="crm-title">Заявки мастерской</h2></div><button class="round" type="button" data-close aria-label="Закрыть CRM"><svg class="icon" aria-hidden="true"><use href="#close"/></svg></button></div>
+    <div class="dialog-body">
+      <p class="dialog-note">Тестовые карточки и статусы сохраняются в этом браузере.</p>
+      <div id="crm-list" class="crm-list"></div>
+      <p id="crm-feedback" class="feedback" role="status"></p>
+    </div>
+  </dialog>
+  <script id="project-data" type="application/json">[{"id":"green-kitchen","title":"Зелёная кухня","category":"Кухни","kind":"Кухня","finish":"Зелёная","source":"https://t.me/rassvet_mebel/462","description":"Рифлёные зелёные фасады, стеклянная витрина и тёплая подсветка рабочей зоны. Готовая работа из публикации 9 сентября.","photos":[{"src":"assets/green-kitchen-1.webp","width":800,"height":600,"alt":"Зелёная кухня с подсвеченной витриной и каменным фартуком"},{"src":"assets/green-kitchen-2.webp","width":800,"height":600,"alt":"Столешница зелёной кухни, мойка и варочная панель крупным планом"},{"src":"assets/green-kitchen-3.webp","width":600,"height":800,"alt":"Зелёные фасады и встроенная техника, вид сбоку"}]},{"id":"glass-kitchen","title":"Кухня с витриной","category":"Кухни","kind":"Кухня","finish":"Светлая","source":"https://t.me/rassvet_mebel/421","description":"Светлые фасады и высокая стеклянная витрина в тёмной раме. Встроенная духовка расположена под рабочей поверхностью.","photos":[{"src":"assets/glass-kitchen-1.webp","width":800,"height":600,"alt":"Светлая кухня с высокой застеклённой витриной, вид спереди"},{"src":"assets/glass-kitchen-2.webp","width":600,"height":800,"alt":"Светлая кухня с витриной под углом"}]},{"id":"hall-storage","title":"Шкафы для прихожей","category":"Шкафы","kind":"Шкаф или гардеробная","finish":"Под дерево","source":"https://t.me/rassvet_mebel/410","description":"Шкафы с древесным рисунком, открытая секция и встроенная гладильная доска. Снимки показывают фасады и внутреннее наполнение.","photos":[{"src":"assets/hall-storage-1.webp","width":600,"height":800,"alt":"Шкафы с древесным рисунком и открытая секция прихожей"},{"src":"assets/hall-storage-2.webp","width":600,"height":800,"alt":"Боковые полки встроенного шкафа в прихожей"},{"src":"assets/hall-storage-3.webp","width":600,"height":800,"alt":"Открытые двери шкафа и отделение со штангой"}]},{"id":"kids-room","title":"Рабочая зона в детской","category":"Детские","kind":"Стол или другая мебель","finish":"Под дерево","source":"https://t.me/rassvet_mebel/435","description":"Длинная столешница у окна и два высоких шкафа по бокам. Общий ракурс показывает, как мебель поместилась в небольшой комнате.","photos":[{"src":"assets/kids-room-1.webp","width":600,"height":800,"alt":"Стол под окном между двумя высокими шкафами в детской"},{"src":"assets/kids-room-2.webp","width":600,"height":800,"alt":"Рабочая поверхность и хранение в детской крупным планом"}]},{"id":"bedroom","title":"Хранение в спальне","category":"Шкафы","kind":"Шкаф или гардеробная","finish":"Светлая","source":"https://t.me/rassvet_mebel/479","description":"Светлые шкафы вдоль стены и подвесная тумба. На общем плане видно, как мебель вписана в интерьер спальни.","photos":[{"src":"assets/bedroom-1.webp","width":800,"height":600,"alt":"Светлые шкафы вдоль стены в спальне"},{"src":"assets/bedroom-2.webp","width":600,"height":800,"alt":"Подвесная тумба и вертикальная отделка стены в спальне"}]},{"id":"tv-zone","title":"Подвесная ТВ-тумба","category":"ТВ-зоны","kind":"Тумба или ТВ-зона","finish":"Под дерево","source":"https://t.me/rassvet_mebel/485","description":"Подвесная тумба вдоль стены и вертикальная секция с открытыми полками. Светлые фасады сочетаются с древесным рисунком.","photos":[{"src":"assets/tv-zone-1.webp","width":600,"height":800,"alt":"Подвесная ТВ-тумба и высокая секция с открытыми полками"},{"src":"assets/tv-zone-2.webp","width":600,"height":800,"alt":"Вид сбоку на столешницу и вертикальную секцию ТВ-зоны"}]}]</script>
+  <script>(() => {
+  "use strict";
+  const $ = id => document.getElementById(id);
+  const data = JSON.parse($("project-data").textContent);
+  const projects = new Map(data.map(project => [project.id, project]));
+  const projectDialog = $("project-dialog");
+  const requestDialog = $("request-dialog");
+  const crmDialog = $("crm-dialog");
+  const form = $("order-form");
+  const requestText = $("request-text");
+  let viewed = null;
+  let photoIndex = 0;
+  let reference = null;
+  let draft = null;
+
+  document.querySelectorAll("button[data-close]").forEach(button => {
+    button.addEventListener("click", () => button.closest("dialog").close());
+  });
+
+  const filterButtons = [...document.querySelectorAll("[data-filter]")];
+  const cards = [...document.querySelectorAll(".card")];
+  function filterCards(category) {
+    filterButtons.forEach(button => button.setAttribute("aria-pressed", button.dataset.filter === category));
+    let count = 0;
+    for (const card of cards) {
+      card.hidden = category !== "all" && card.dataset.category !== category;
+      if (!card.hidden) count++;
+    }
+    $("project-count").textContent = "Работ в подборке — " + count;
+  }
+  filterButtons.forEach(button => button.addEventListener("click", () => filterCards(button.dataset.filter)));
+  filterCards("all");
+
+  function displayPhoto() {
+    const photo = viewed.photos[photoIndex];
+    $("project-image").alt = photo.alt;
+    $("project-image").src = photo.src;
+    $("photo-index").textContent = (photoIndex + 1) + " / " + viewed.photos.length;
+  }
+  function movePhoto(step) {
+    photoIndex = (photoIndex + step + viewed.photos.length) % viewed.photos.length;
+    displayPhoto();
+  }
+  document.querySelectorAll("button[data-project]").forEach(button => {
+    button.addEventListener("click", () => {
+      viewed = projects.get(button.dataset.project);
+      photoIndex = 0;
+      $("project-kind").textContent = viewed.category;
+      $("project-title").textContent = viewed.title;
+      $("project-description").textContent = viewed.description;
+      $("project-source").href = viewed.source;
+      $("photo-prev").hidden = $("photo-next").hidden = viewed.photos.length < 2;
+      displayPhoto();
+      projectDialog.showModal();
+      projectDialog.scrollTop = 0;
+    });
+  });
+  $("photo-prev").addEventListener("click", () => movePhoto(-1));
+  $("photo-next").addEventListener("click", () => movePhoto(1));
+  const projectImage = $("project-image");
+  let swipeStart = null;
+  projectImage.addEventListener("pointerdown", event => {
+    if (event.pointerType === "touch" && event.isPrimary) {
+      swipeStart = { id: event.pointerId, x: event.clientX, y: event.clientY };
+    }
+  });
+  projectImage.addEventListener("pointerup", event => {
+    if (!swipeStart || event.pointerId !== swipeStart.id) return;
+    const horizontal = event.clientX - swipeStart.x;
+    const vertical = event.clientY - swipeStart.y;
+    swipeStart = null;
+    if (viewed.photos.length > 1 && Math.abs(horizontal) >= 48 && Math.abs(horizontal) > 1.4 * Math.abs(vertical)) {
+      movePhoto(horizontal < 0 ? 1 : -1);
+    }
+  });
+  projectImage.addEventListener("pointercancel", () => { swipeStart = null; });
+  projectDialog.addEventListener("keydown", event => {
+    if (viewed.photos.length < 2 || !["ArrowLeft", "ArrowRight"].includes(event.key)) return;
+    event.preventDefault();
+    movePhoto(event.key === "ArrowRight" ? 1 : -1);
+  });
+
+  function fields() {
+    const value = name => String(form.elements[name].value).trim();
+    return [
+      ["Мебель", value("kind"), "Выберите вид мебели"],
+      ["Пример", reference?.title || "", "По вашей идее"],
+      ["Размеры", value("size"), "Уточним"],
+      ["Отделка", value("finish"), "Обсудим"],
+      ["Город", value("city"), ""],
+      ["Пожелания", value("notes"), ""]
+    ];
+  }
+  function updateSummary() {
+    const rows = fields().flatMap(([label, value, placeholder]) => {
+      if (!value && !placeholder) return [];
+      const row = document.createElement("div");
+      const term = document.createElement("dt");
+      const content = document.createElement("dd");
+      term.textContent = label;
+      content.textContent = value || placeholder;
+      row.append(term, content);
+      return [row];
+    });
+    $("summary-fields").replaceChildren(...rows);
+  }
+  form.addEventListener("input", updateSummary);
+  form.addEventListener("change", updateSummary);
+  $("select-project").addEventListener("click", () => {
+    reference = viewed;
+    $("reference-image").src = viewed.photos[0].src;
+    $("reference-name").textContent = viewed.title;
+    $("reference").hidden = false;
+    form.elements.kind.value = viewed.kind;
+    if (viewed.finish) form.elements.finish.value = viewed.finish;
+    updateSummary();
+    projectDialog.close();
+    if (location.hash !== "#order") history.pushState(null, "", "#order");
+    $("order").scrollIntoView();
+    form.elements.kind.focus({preventScroll:true});
+  });
+  $("clear-reference").addEventListener("click", () => {
+    reference = null;
+    $("reference").hidden = true;
+    updateSummary();
+    form.elements.kind.focus();
+  });
+  updateSummary();
+
+  form.addEventListener("submit", event => {
+    event.preventDefault();
+    const lines = fields().filter(([, value]) => value).map(([label, value]) => label + " — " + value);
+    if (reference) lines.push("Фото проекта — " + reference.source);
+    draft = {
+      title: form.elements.kind.value,
+      text: ["Здравствуйте! Хочу обсудить мебель на заказ.", "", ...lines].join("\n")
+    };
+    requestText.value = draft.text;
+    $("request-feedback").textContent = "";
+    $("save-test").disabled = false;
+    requestDialog.showModal();
+    requestDialog.scrollTop = 0;
+  });
+  $("copy-request").addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(requestText.value);
+      $("request-feedback").textContent = "Текст скопирован";
+    } catch {
+      requestText.focus();
+      requestText.select();
+      $("request-feedback").textContent = "Текст выделен. Скопируйте его.";
+    }
+  });
+
+  const storeKey = "rassvet-demo-crm-v1";
+  const stages = ["Новая", "В работе", "Замер согласован", "Расчёт отправлен", "Завершена"];
+  const examples = [
+    { id: 3, title: "Кухня", text: "Пример заявки\nКухня по мотивам зелёного проекта\nРазмеры — 320 × 245 см", stage: "Новая" },
+    { id: 2, title: "Шкаф или гардеробная", text: "Пример заявки\nШкаф для прихожей с полками\nРазмеры — 210 × 250 см", stage: "Замер согласован" }
+  ];
+  function getOrders() {
+    const saved = localStorage.getItem(storeKey);
+    if (!saved) return structuredClone(examples);
+    const orders = JSON.parse(saved);
+    if (!Array.isArray(orders)) throw Error("Invalid demo orders");
+    return orders;
+  }
+  function renderOrders() {
+    let orders;
+    try {
+      orders = getOrders();
+      $("crm-feedback").textContent = "";
+    } catch {
+      orders = structuredClone(examples);
+      $("crm-feedback").textContent = "Браузер не открыл локальное хранилище.";
+    }
+    $("crm-list").replaceChildren(...orders.map(order => {
+      const card = document.createElement("details");
+      card.className = "crm-item";
+      const number = "RM-" + String(order.id).padStart(3, "0");
+      const title = document.createElement("summary");
+      title.textContent = number + " · " + order.title + " · " + order.stage;
+      const text = document.createElement("pre");
+      text.textContent = order.text;
+      const label = document.createElement("label");
+      label.textContent = "Статус заявки " + number;
+      const status = document.createElement("select");
+      status.replaceChildren(...stages.map(stage => new Option(stage, stage)));
+      status.value = order.stage;
+      status.addEventListener("change", () => {
+        try {
+          const current = getOrders();
+          const entry = current.find(item => item.id === order.id);
+          entry.stage = status.value;
+          localStorage.setItem(storeKey, JSON.stringify(current));
+          order.stage = entry.stage;
+          title.textContent = number + " · " + order.title + " · " + order.stage;
+          $("crm-feedback").textContent = "Статус сохранён";
+        } catch {
+          status.value = order.stage;
+          $("crm-feedback").textContent = "Браузер не сохранил статус.";
+        }
+      });
+      label.append(status);
+      card.append(title, text, label);
+      return card;
+    }));
+  }
+  function showCrm() {
+    renderOrders();
+    crmDialog.showModal();
+    crmDialog.scrollTop = 0;
+  }
+  $("open-crm").addEventListener("click", showCrm);
+  $("save-test").addEventListener("click", () => {
+    try {
+      const orders = getOrders();
+      const id = Math.max(0, ...orders.map(order => order.id)) + 1;
+      orders.unshift({id, title: draft.title, text: draft.text, stage: "Новая"});
+      localStorage.setItem(storeKey, JSON.stringify(orders));
+      $("save-test").disabled = true;
+      requestDialog.close();
+      showCrm();
+      $("crm-list").firstElementChild.open = true;
+    } catch {
+      $("request-feedback").textContent = "Браузер не сохранил тестовую заявку.";
+    }
+  });
+})();
+</script>
+</body>
+</html>
